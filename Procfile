@@ -1,0 +1,1 @@
+web: gunicorn sells_report.wsgi --log-file -
