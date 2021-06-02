@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 Django settings for sells_report project.
 
@@ -9,6 +10,13 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+=======
+import os
+import django_heroku
+import dj_database_url
+from decouple import config
+
+>>>>>>> 8361d64 (chenged setting file)
 
 from pathlib import Path
 
@@ -25,7 +33,11 @@ SECRET_KEY = 'django-insecure-qd0fltuu!2=p$-rx+g-c$=pk3cof6t7p9ui8v8r9mqk+c6o=2i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['seleschart.herokuapp.com', '127.0.0.1']
+=======
+ALLOWED_HOSTS = []
+>>>>>>> 8361d64 (chenged setting file)
 
 
 # Application definition
@@ -131,10 +143,15 @@ LOGIN_URL = '/login/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+<<<<<<< HEAD
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
+=======
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+>>>>>>> 8361d64 (chenged setting file)
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -143,6 +160,12 @@ STATICFILES_DIRS = [
     BASE_DIR / 'reports' / 'static',
 ]
 
+<<<<<<< HEAD
+=======
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+>>>>>>> 8361d64 (chenged setting file)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
