@@ -20,7 +20,13 @@ SECRET_KEY = 'django-insecure-qd0fltuu!2=p$-rx+g-c$=pk3cof6t7p9ui8v8r9mqk+c6o=2i
 DEBUG = "False"
 
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['127.0.0.1']
+=======
+
+ALLOWED_HOSTS = ['seleschart.herokuapp.com', '127.0.0.1']
+>>>>>>> d2a751d2ab680465fec3ebcd174f506fe4bf5c7f
+
 
 # Application definition
 
@@ -125,6 +131,12 @@ LOGIN_URL = '/login/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+
 
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
